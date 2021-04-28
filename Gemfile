@@ -27,6 +27,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'jquery-rails'
+gem 'mini_racer'
+
+
 
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment
@@ -44,6 +47,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
   gem 'sqlite3'
+  gem 'rspec-rails', '~> 3.7'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -60,6 +64,7 @@ end
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
+  gem 'simplecov', require: false
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
