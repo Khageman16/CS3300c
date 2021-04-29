@@ -28,7 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'jquery-rails'
 gem 'mini_racer'
-
+gem 'simplecov', require: false, group: :test
 
 
 group :production do
