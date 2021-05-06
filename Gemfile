@@ -29,6 +29,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3.1'
 gem 'jquery-rails'
 gem 'mini_racer'
 gem 'simplecov', require: false, group: :test
+gem 'devise'
 
 
 group :production do
