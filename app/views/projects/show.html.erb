@@ -1,14 +1,13 @@
 <% provide(:page_title, @project.title) %>
+<% provide(:portfolio_active, 'active') %>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
-
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
+<div class="row">
+  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
+    <h1><%= @project.title %></h1>
+    <p><%= @project.display_day_published %></p>
+    <%= @project.description %>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_project_path(@project) %> |
 <%= link_to 'Back', projects_path %>
